@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/928a911a4e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .fab {
+        font-family: "Font Awesome 6 Brands";
+        font-weight: 400;
+        display: flex;
+      }
+      .temp2 {
+        display: flex;
+      }
+      
+      @media screen and (max-width: 600px){
+        .fa-8x{
+          font-size: 3em;
+        }
+      }
+    </style>
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <section id="logo">logo</section>
+      <section id="hamburger"><i class="fa-solid fa-bars"></i></section>
+      <section id="navbar">
+        <ul id="navbarlink">
+          <li><span> 01.</span> <a href="#Home">Home</a></li>
+          <li><span> 02.</span> <a href="#About">About</a></li>
+          <li><span> 03.</span><a href="#Experience">experience</a></li>
+          <li><span> 04.</span><a href="#educationAndCousePartition">Education</a></li>
+          <li><span> 05.</span><a href="#Contact">Contact</a></li>
+          <li> <!--<div class="toggleButton">
+            <label class="switch">
+              <input id="checkBox" type="checkbox" /> 
+              <span class="slider"></span>
+            </label>
+          </div> --> 
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="labelForDarkTheme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+        
+        </ul>
+      </section>
+      <section id="rightSide">
+        
+          <div class="contentOfFixedPosition"><a href="mailto:deepkumarpatel12@gmail.com">deepkumarpatel12@gmail.com</a></div>
+        
+      </section>
+      <section id="leftSide">
+        
+        <div class="contentOfFixedPosition">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      
+    </section>
+    </header>
+    <div class="scrollBar" id="scrollProgress"></div>
+    <main>
+      <div class="partition" id="Home">
+        <section class="zerothSection" id="othSection">
+          <div class="mainSection">
+            <p class="mainSectionFirstText">Hello, My name is</p>
+            <div class="myName">
+              <h2 class="title">
+                <span class="title-word title-word-1 mainSectionSecondText">Deepkumar</span>
+                <span class="title-word title-word-2 mainSectionSecondText">Patel</span>
+              </h2>
+            </div>
+            <p class="mainSectionThirdText">I build things for the web.</p>
+            <p class="mainSectionForthText">
+              I’m a software engineer specializing in building (and occasionally
+              designing)<br />
+              exceptional digital experiences. Currently, I’m focused on
+              building accessible,<br />
+              human-centered products at Upstatement.
+            </p>
+            <a href="static/media/Deepkumar_Patel_Resume.pdf" download=""><button class="cvButton button">Resume</button></a>
+          </div>
+        </section>
+      </div>
+      <div class="partition" id="About">
+        <section class="firstSession mainContainerSkills">
+          <div class="numberedHeading">
+            <h1><span>2. </span>About Me</h1>
+            <hr />
+          </div>
+          <div class="firstSessionContent">
+            <div class="temp1" style="flex-grow: 1">
+              <p>
+                Hello! My name is Brittany and I enjoy creating things that live
+                on the internet. My interest in web development started back in
+                2012 when I decided to try editing custom Tumblr themes — turns
+                out hacking together a custom reblog button taught me a lot
+                about HTML & CSS! Fast-forward to today, and I’ve had the
+                privilege of working at an advertising agency, a start-up, a
+                huge corporation, and a student-led design studio. My main focus
+                these days is building accessible, inclusive products and
+                digital experiences at Upstatement for a variety of clients. I
+                also recently launched a course that covers everything you need
+                to build a web app with the Spotify API using Node & React. Here
+                are a few technologies I’ve been working with recently:
+              </p>
+              <ul class="skills">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>C#</li>
+                <li>Linux</li>
+                <li>Talend studio</li>
+                <li>Java</li>
+                <li>Git</li>
+              </ul>
+            </div>
+            <div class="pictureOfMySelf">
+              <div class="container">
+                <div class="shape">
+                  <img
+                    class="myImage"
+                    src="images/MyImage.png"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="partition" >
+        <div class="mainContainerSkills">
+          <div class="numberedHeading" id="Experience">
+            <h1><span>3. </span>My Knowledge</h1>
+            <hr />
+          </div>
+          <div>
+            <ul id="skillSectionNavBar">
+              <li class="skillSectionNavBarElement Active">Web development</li>
+              <li class="skillSectionNavBarElement">Programing Languages</li>
+              <li class="skillSectionNavBarElement">Networking</li>
+              <li class="skillSectionNavBarElement">AWS</li>
+              <li class="skillSectionNavBarElement">Operating Systems</li>
+            </ul>
+          </div>
+          <div id="skillContainer">
+            <div id="skillContainer1stDiv" class="skillContainerDiv active">
+              <ul class="ulListForSkills">
+                <li class="skillElement gradient-border">
+                  <i class="fab fa-html5 fa-8x icons"></i><span>HTML</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fab fa-css3-alt fa-8x icons"></i>
+                  <span>JavaScript</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fab fa-js fa-8x icons"></i><span>CSS</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fa-node fab fa-8x icons"></i><span>NodeJS</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fa-php fa-8x fab icons"></i
+                  ><span>PHP</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fa-bootstrap fa-8x fab icons"></i
+                  ><span>Bootstrap</span>
+                </li>
+              </ul>
+              <!-- <i class="fab fa-css3-alt fa-8x icons"></i>
+              <i class="fab fa-js fa-8x icons"></i>
+              <i class="fab fa-css3-alt fa-8x icons"></i>
+              <!-- <object
+                data="svgs/jquery.svg"
+                class="fa-brands icons"
+                style="width: 279.8px"
+              ></object> 
+              <i class="fa-brands fa-php fa-8x fab icons"></i>
+              <i class="fa-brands fa-bootstrap fa-8x fab icons"></i> -->
+              <!-- <object
+                data="svgs/typescript.svg"
+                class="fa-brands icons"
+                style="width: 10em"
+              ></object> -->
+            </div>
+            <div id="skillContainer2ndDiv" class="skillContainerDiv">
+              <ul class="ulListForSkills">
+                <li class="skillElement gradient-border">
+                  <i class="fa-solid fa-8x fa-c icons fab"></i
+                  ><span>C</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fa-8x fa-java icons fab"></i
+                  ><span>Java</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="devicon-c-plain fa-8x icons fab"></i
+                  ><span>C#</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fab fa-python fa-8x icons"></i
+                  ><span>Python</span>
+                </li>
+              </ul>
+            </div>
+            <div id="skillContainer3rdDiv" class="skillContainerDiv">
+              <ul class="ulListForSkills">
+                <li class="skillElement gradient-border">
+                  <i class="fa-solid temp2 fa-network-wired fa-8x icons"></i
+                  ><span>Knowledge of basic protocols</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="devicon-networkx-original fa-8x icons"></i
+                  ><span>
+                    routing protocols such as
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCP/IP, UDP, DHCP</span
+                  >
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="devicon-c-plain fa-8x icons fab"></i
+                  ><span>JavaScript</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fab fa-python fa-8x icons"></i
+                  ><span>JavaScript</span>
+                </li>
+              </ul>
+            </div>
+            <div id="skillContainer4thDiv " class="skillContainerDiv">
+              <ul class="ulListForSkills">
+                <li class="skillElement gradient-border">
+                  <i
+                    class="devicon-amazonwebservices-original icons fab fa-8x"
+                  ></i>
+                  <span>Amazon Web Services</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-solid fa-certificate icons temp2 fa-8x"></i
+                  ><span>AWS Certified Cloud Practitioner</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-light fa-lambda icons fab fa-8x"></i
+                  ><span>Lambda</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-brands fa-docker fab fa-8x icons"></i
+                  ><span>Docker</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="fa-solid fa-server temp2 fa-8x icons"></i
+                  ><span>DynamoDB</span>
+                </li>
+              </ul>
+            </div>
+            <div id="skillContainer5thDiv" class="skillContainerDiv">
+              <ul class="ulListForSkills">
+                <li class="skillElement gradient-border">
+                  <i class="devicon-mysql-plain icons fab fa-8x"></i
+                  ><span>MySQL</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="devicon-mongodb-plain icons fab fa-8x"></i>
+                  <span> MongoDB</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="devicon-oracle-original icons fab fa-8x"></i>
+                  <span>Oracle</span>
+                </li>
+                <li class="skillElement gradient-border">
+                  <i class="devicon-postgresql-plain icons fab fa-8x"></i
+                  ><span>postgresql</span>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="skillContainerDiv" style="visibility:hidden;z-index:-1;height: 100vh;"></div> -->
+        </div>
+        </div>
+      </div>
+      <div class="partition" id="educationAndCousePartition">
+        <div class = "mainContainerSkills" >
+          <div class="numberedHeading">
+            <h1><span>4. </span>Education and Courses</h1>
+            <hr />
+          </div>
+          <div id="educationAndCourses">
+            <div id="education">
+              <div class="mainTopbar">
+                <div><p>Education</p></div>
+                <div class="topbar">
+                  <div class="minimize"></div>
+                  <div class="maximize"></div>
+                  <div class="close"></div>
+                </div>
+              </div>
+              <div class="educationAndCoursesContent">
+                <div class = "sectionFroEducationAndCourseContent">
+                  
+                  <h3><i class="fa-solid fa-building-columns"></i>&ensp;</i>Computer Programming</h3>
+                  <h4>Sheridan College</h4> 
+                  <h5>2021-2022</h5>
+                </div>
+              </div>
+            </div>
+            <div id="courses">
+              <div class="mainTopbar">
+              <div ><p>Courses</p></div>
+              <div class="topbar"><div class="minimize"></div>
+              <div class="maximize"></div>
+              <div class="close"></div></div>
+              </div>
+            <div class="educationAndCoursesContent">
+              <div class = "sectionFroEducationAndCourseContent">
+                  
+                <h3><i class="fa-solid fa-certificate"></i>&ensp;</i>AWS Certified Cloud Practitioner</h3>
+                <h4>Amazon Web Services</h4> 
+                <h5>May-2022</h5>
+              </div>
+              <div class = "sectionFroEducationAndCourseContent">
+                  
+                <h3><i class="fa-solid fa-certificate"></i>&ensp;</i>Introduction to Cybersecurity</h3>
+                <h4>Cisco</h4> 
+                <h5>Dec-2021</h5>
+              </div>
+              <div class = "sectionFroEducationAndCourseContent">
+                <h3><i class="fa-solid fa-certificate"></i>&ensp;</i>Introduction to Packet Tracer English 1121b</h3>
+                <h4>Cisco Networking Academy </h4> 
+                <h5>Nov-2021</h5>
+              </div>
+              <div class = "sectionFroEducationAndCourseContent">
+                  
+                <h3><i class="fa-solid fa-certificate"></i>&ensp;</i>Server-side Development with NodeJS, Express and MongoDB</h3>
+                <h4>The Hong Kong University of Science and Technology </h4> 
+                <h5>May-2022</h5>
+              </div>
+              <div class = "sectionFroEducationAndCourseContent">
+                  
+                <h3><i class="fa-solid fa-certificate"></i>&ensp;</i>Front-End Web Development with React</h3>
+                <h4>The Hong Kong University of Science and Technology </h4> 
+                <h5>May-2022</h5>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partition" id="Contact">
+        <div class="containerAboutus">
+          <div class="numberedHeading">
+            <h1><span>5. </span>Contact Me</h1>
+            <hr />
+          </div>
+          <div class="backgroundForAddressAndContact">
+            <div class="addressAndContactUs">
+              <div class="address"><h1>Toronto,ON</h1>
+                <h3>8 Mosque Crescent, </h3> 
+                <h3>Etobicoke, ON M9V 4J2</h3>
+                <h3>deepkumarpatel12@gmail.com</h3>
+                <h3>+1 (519)-710-8584</h3>
+              </div>
+              <div class="contactUs">
+                <div class="nameAndEmailInput">
+                  <input type="text" placeholder="Name" name="from_name">
+                  <input type="Email" name="from_email" placeholder="Email">
+                </div>
+                <div>
+                  <input type="text" placeholder="Subject" name="from_name">
+                </div>
+                <div><textarea name="message" rows="5" placeholder="Message"></textarea></div>
+                <div><button class="button">Contact Me</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partition">
+       
+      </div>
+    </main>
+    <!-- <footer>
+     
+      <h5>Copyright Deep Patel</h5>
+    </footer> -->
+  </body>
+</html>
+<script src="./script.js"></script>
