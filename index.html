@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -24,7 +28,7 @@
       }
       
       @media screen and (max-width: 600px){
-        .fa-8x{
+        .fa-6x{
           font-size: 3em;
         }
       }
@@ -35,19 +39,14 @@
     <header id="header">
       <section id="logo">logo</section>
       <section id="hamburger"><i class="fa-solid fa-bars"></i></section>
-      <section id="navbar">
+      <section id="navbar" class="animate__animated animate__lightSpeedInRight">
         <ul id="navbarlink">
           <li><span> 01.</span> <a href="#Home">Home</a></li>
           <li><span> 02.</span> <a href="#About">About</a></li>
           <li><span> 03.</span><a href="#Experience">experience</a></li>
           <li><span> 04.</span><a href="#educationAndCousePartition">Education</a></li>
           <li><span> 05.</span><a href="#Contact">Contact</a></li>
-          <li> <!--<div class="toggleButton">
-            <label class="switch">
-              <input id="checkBox" type="checkbox" /> 
-              <span class="slider"></span>
-            </label>
-          </div> --> 
+          <li> 
           <input type="checkbox" class="checkbox" id="checkbox">
           <label for="checkbox" class="labelForDarkTheme">
             <i class="fas fa-sun"></i>
@@ -59,12 +58,12 @@
         
         </ul>
       </section>
-      <section id="rightSide">
+      <section id="rightSide" class="animate__animated animate__slideInUp animate__delay-2s">
         
           <div class="contentOfFixedPosition"><a href="mailto:deepkumarpatel12@gmail.com">deepkumarpatel12@gmail.com</a></div>
         
       </section>
-      <section id="leftSide">
+      <section id="leftSide" class="animate__animated animate__slideInUp animate__delay-2s">
         
         <div class="contentOfFixedPosition">
           <i class="fa-brands fa-github"></i>
@@ -74,14 +73,75 @@
       
     </section>
     </header>
-    <div class="scrollBar" id="scrollProgress"></div>
+    <div class="scrollBar selectDisable" id="scrollProgress"></div>
     <main>
+      <div class="parallaxContainer" style="top: 10%;left: 0;">
+        <img src="parallax/1.png" data-speed="-5" class="layer">
+        <img src="parallax/2.png" data-speed="-5" class="layer">
+        <img src="parallax/3.png" data-speed="-5" class="layer">
+        <img src="parallax/4.png" data-speed="-5" class="layer">
+        <img src="parallax/5.png" data-speed="-5" class="layer">
+        <img src="parallax/6.png" data-speed="-5" class="layer">
+        <img src="parallax/7.png" data-speed="-5" class="layer">
+        <img src="parallax/8.png" data-speed="-5" class="layer">
+        <img src="parallax/9.png" data-speed="-5" class="layer">
+        <img src="parallax/10.png" data-speed="-5" class="layer">
+        <img src="parallax/11.png" data-speed="-5" class="layer">
+        <img src="parallax/12.png" data-speed="-5" class="layer">
+      </div>
+      
+      <div class="parallaxContainer selectDisable"  style="top: 10; left: 50%;">
+        <img src="parallax/1.png" data-speed="-5" class="layer">
+        <img src="parallax/2.png" data-speed="-5" class="layer">
+        <img src="parallax/3.png" data-speed="-5" class="layer">
+        <img src="parallax/4.png" data-speed="-5" class="layer">
+        <img src="parallax/5.png" data-speed="-5" class="layer">
+        <img src="parallax/6.png" data-speed="-5" class="layer">
+        <img src="parallax/7.png" data-speed="-5" class="layer">
+        <img src="parallax/8.png" data-speed="-5" class="layer">
+        <img src="parallax/9.png" data-speed="-5" class="layer">
+        <img src="parallax/10.png" data-speed="-5" class="layer">
+        <img src="parallax/11.png" data-speed="-5" class="layer">
+        <img src="parallax/12.png" data-speed="-5" class="layer">
+      </div>
+
+      
+      <div class="parallaxContainer selectDisable"  style="top: 50%; left: 0;">
+        <img src="parallax/1.png" data-speed="-5" class="layer">
+        <img src="parallax/2.png" data-speed="-5" class="layer">
+        <img src="parallax/3.png" data-speed="-5" class="layer">
+        <img src="parallax/4.png" data-speed="-5" class="layer">
+        <img src="parallax/5.png" data-speed="-5" class="layer">
+        <img src="parallax/6.png" data-speed="-5" class="layer">
+        <img src="parallax/7.png" data-speed="-5" class="layer">
+        <img src="parallax/8.png" data-speed="-5" class="layer">
+        <img src="parallax/9.png" data-speed="-5" class="layer">
+        <img src="parallax/10.png" data-speed="-5" class="layer">
+        <img src="parallax/11.png" data-speed="-5" class="layer">
+        <img src="parallax/12.png" data-speed="-5" class="layer">
+      </div>
+
+      
+      <div class="parallaxContainer selectDisable"  style="top: 50%; left: 50%;">
+        <img src="parallax/1.png" data-speed="-5" class="layer">
+        <img src="parallax/2.png" data-speed="-5" class="layer">
+        <img src="parallax/3.png" data-speed="-5" class="layer">
+        <img src="parallax/4.png" data-speed="-5" class="layer">
+        <img src="parallax/5.png" data-speed="-5" class="layer">
+        <img src="parallax/6.png" data-speed="-5" class="layer">
+        <img src="parallax/7.png" data-speed="-5" class="layer">
+        <img src="parallax/8.png" data-speed="-5" class="layer">
+        <img src="parallax/9.png" data-speed="-5" class="layer">
+        <img src="parallax/10.png" data-speed="-5" class="layer">
+        <img src="parallax/11.png" data-speed="-5" class="layer">
+        <img src="parallax/12.png" data-speed="-5" class="layer">
+      </div>
       <div class="partition" id="Home">
-        <section class="zerothSection" id="othSection">
-          <div class="mainSection">
+        <section class="zerothSectionmainSection animate__animated animate__lightSpeedInLeft animate__delay-1s " id="othSection">
+          <div>
             <p class="mainSectionFirstText">Hello, My name is</p>
             <div class="myName">
-              <h2 class="title">
+              <h2 class="animate__animated animate__backInDown animate__delay-1s title">
                 <span class="title-word title-word-1 mainSectionSecondText">Deepkumar</span>
                 <span class="title-word title-word-2 mainSectionSecondText">Patel</span>
               </h2>
@@ -167,38 +227,38 @@
           <div id="skillContainer">
             <div id="skillContainer1stDiv" class="skillContainerDiv active">
               <ul class="ulListForSkills">
-                <li class="skillElement gradient-border">
-                  <i class="fab fa-html5 fa-8x icons"></i><span>HTML</span>
+                <li class="skillElement  ">
+                  <i class="fab fa-html5 fa-6x icons"></i><span>HTML</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fab fa-css3-alt fa-8x icons"></i>
+                <li class="skillElement  ">
+                  <i class="fab fa-css3-alt fa-6x icons"></i>
                   <span>JavaScript</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fab fa-js fa-8x icons"></i><span>CSS</span>
+                <li class="skillElement  ">
+                  <i class="fab fa-js fa-6x icons"></i><span>CSS</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fa-node fab fa-8x icons"></i><span>NodeJS</span>
+                <li class="skillElement  ">
+                  <i class="fa-brands fa-node fab fa-6x icons"></i><span>NodeJS</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fa-php fa-8x fab icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-brands fa-php fa-6x fab icons"></i
                   ><span>PHP</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fa-bootstrap fa-8x fab icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-brands fa-bootstrap fa-6x fab icons"></i
                   ><span>Bootstrap</span>
                 </li>
               </ul>
-              <!-- <i class="fab fa-css3-alt fa-8x icons"></i>
-              <i class="fab fa-js fa-8x icons"></i>
-              <i class="fab fa-css3-alt fa-8x icons"></i>
+              <!-- <i class="fab fa-css3-alt fa-6x icons"></i>
+              <i class="fab fa-js fa-6x icons"></i>
+              <i class="fab fa-css3-alt fa-6x icons"></i>
               <!-- <object
                 data="svgs/jquery.svg"
                 class="fa-brands icons"
                 style="width: 279.8px"
               ></object> 
-              <i class="fa-brands fa-php fa-8x fab icons"></i>
-              <i class="fa-brands fa-bootstrap fa-8x fab icons"></i> -->
+              <i class="fa-brands fa-php fa-6x fab icons"></i>
+              <i class="fa-brands fa-bootstrap fa-6x fab icons"></i> -->
               <!-- <object
                 data="svgs/typescript.svg"
                 class="fa-brands icons"
@@ -207,89 +267,89 @@
             </div>
             <div id="skillContainer2ndDiv" class="skillContainerDiv">
               <ul class="ulListForSkills">
-                <li class="skillElement gradient-border">
-                  <i class="fa-solid fa-8x fa-c icons fab"></i
+                <li class="skillElement  ">
+                  <i class="fa-solid fa-6x fa-c icons fab"></i
                   ><span>C</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fa-8x fa-java icons fab"></i
+                <li class="skillElement  ">
+                  <i class="fa-brands fa-6x fa-java icons fab"></i
                   ><span>Java</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="devicon-c-plain fa-8x icons fab"></i
+                <li class="skillElement  ">
+                  <i class="devicon-c-plain fa-6x icons fab"></i
                   ><span>C#</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fab fa-python fa-8x icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-brands fab fa-python fa-6x icons"></i
                   ><span>Python</span>
                 </li>
               </ul>
             </div>
             <div id="skillContainer3rdDiv" class="skillContainerDiv">
               <ul class="ulListForSkills">
-                <li class="skillElement gradient-border">
-                  <i class="fa-solid temp2 fa-network-wired fa-8x icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-solid temp2 fa-network-wired fa-6x icons"></i
                   ><span>Knowledge of basic protocols</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="devicon-networkx-original fa-8x icons"></i
+                <li class="skillElement  ">
+                  <i class="devicon-networkx-original fa-6x icons"></i
                   ><span>
                     routing protocols such as
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TCP/IP, UDP, DHCP</span
                   >
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="devicon-c-plain fa-8x icons fab"></i
+                <li class="skillElement  ">
+                  <i class="devicon-c-plain fa-6x icons fab"></i
                   ><span>JavaScript</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fab fa-python fa-8x icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-brands fab fa-python fa-6x icons"></i
                   ><span>JavaScript</span>
                 </li>
               </ul>
             </div>
             <div id="skillContainer4thDiv " class="skillContainerDiv">
               <ul class="ulListForSkills">
-                <li class="skillElement gradient-border">
+                <li class="skillElement  ">
                   <i
-                    class="devicon-amazonwebservices-original icons fab fa-8x"
+                    class="devicon-amazonwebservices-original icons fab fa-6x"
                   ></i>
                   <span>Amazon Web Services</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-solid fa-certificate icons temp2 fa-8x"></i
+                <li class="skillElement  ">
+                  <i class="fa-solid fa-certificate icons temp2 fa-6x"></i
                   ><span>AWS Certified Cloud Practitioner</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-light fa-lambda icons fab fa-8x"></i
+                <li class="skillElement  ">
+                  <i class="fa-light fa-lambda icons fab fa-6x"></i
                   ><span>Lambda</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-brands fa-docker fab fa-8x icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-brands fa-docker fab fa-6x icons"></i
                   ><span>Docker</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="fa-solid fa-server temp2 fa-8x icons"></i
+                <li class="skillElement  ">
+                  <i class="fa-solid fa-server temp2 fa-6x icons"></i
                   ><span>DynamoDB</span>
                 </li>
               </ul>
             </div>
             <div id="skillContainer5thDiv" class="skillContainerDiv">
               <ul class="ulListForSkills">
-                <li class="skillElement gradient-border">
-                  <i class="devicon-mysql-plain icons fab fa-8x"></i
+                <li class="skillElement  ">
+                  <i class="devicon-mysql-plain icons fab fa-6x"></i
                   ><span>MySQL</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="devicon-mongodb-plain icons fab fa-8x"></i>
+                <li class="skillElement  ">
+                  <i class="devicon-mongodb-plain icons fab fa-6x"></i>
                   <span> MongoDB</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="devicon-oracle-original icons fab fa-8x"></i>
+                <li class="skillElement  ">
+                  <i class="devicon-oracle-original icons fab fa-6x"></i>
                   <span>Oracle</span>
                 </li>
-                <li class="skillElement gradient-border">
-                  <i class="devicon-postgresql-plain icons fab fa-8x"></i
+                <li class="skillElement  ">
+                  <i class="devicon-postgresql-plain icons fab fa-6x"></i
                   ><span>postgresql</span>
                 </li>
               </ul>

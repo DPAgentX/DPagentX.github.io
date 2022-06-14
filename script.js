@@ -112,3 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
         body.style.overflow = 'hidden';
     })
 })
+
+
+document.addEventListener('mousemove', (e) => {
+    document.querySelectorAll('.layer').forEach(temp => {
+        const speed = temp.getAttribute('data-speed');
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        temp.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    })
+})

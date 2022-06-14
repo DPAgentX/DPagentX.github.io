@@ -29,6 +29,7 @@
   --font-mono: "Fira Code";
   --yellow: rgb(249, 249, 167);
   --aqua: aqua;
+  --animate-duration: 2s;
 }
 
 body {
@@ -47,6 +48,7 @@ body {
   font-size: 16px;
   padding: 1rem 1rem;
   z-index: 0;
+  overflow: hidden;
   /* position: absolute;
   top: 0;
   left: 0;
@@ -237,6 +239,9 @@ span {
 }
 .skillElement:hover {
   color: var(--green);
+  transform: scale(1.1);
+  border: 1px dashed var(--green);
+  color: var(--green);
 } 
 .skillContainerDiv {
   margin-top: 1rem;
@@ -268,7 +273,7 @@ span {
 .skillElement {
   display: flex;
   flex-direction: column;
-  /* gap: 60px; */
+  box-shadow: 4px 4px 14px 1px #000000a3;
   padding: 2rem 0.5rem;
   justify-content: center;
   align-items: center;
@@ -660,6 +665,8 @@ h3>i{
 
 .title {
   font-weight: 800;
+  --animate-duration: 2s;
+
 }
 /* 
 main{
@@ -731,15 +738,36 @@ body::-webkit-scrollbar-thumb {
 	color: #f39c12;
 }
 
-
-
-
-
-
-
-
-
-
+.layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -10;
+  opacity: 0.3;
+}
+.parallaxContainer{
+  width: 49vw;
+  position: absolute;
+  height: 49vh;
+  z-index: -10;
+  
+}
+#othSection{
+  background-color: var(--bgcolor);
+   /* border: 1px dashed var(--green); */
+  border-radius: 1rem; 
+  box-shadow: 4px 4px 14px 1px #000000a3;
+  padding: 2rem;
+}
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 
 
 
@@ -919,6 +947,9 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
   #navbarlink li span:not(:last-child){
+    display: none;
+  }
+  .parallaxContainer{
     display: none;
   }
 }
