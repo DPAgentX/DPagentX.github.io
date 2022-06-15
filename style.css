@@ -55,9 +55,7 @@ body {
   right: 0;
   margin-right: 1.1rem; */
 }
-#logo {
-  display: inline-block;
-}
+
 #navbar {
   display: flex;
   flex-direction: row;
@@ -750,9 +748,9 @@ body::-webkit-scrollbar-thumb {
 .parallaxContainer{
   width: 49vw;
   position: absolute;
+  overflow: hidden;
   height: 49vh;
   z-index: -10;
-  overflow: hidden;
 }
 #othSection{
   background-color: var(--bgcolor);
@@ -888,6 +886,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
   }
   #logo{
+    display: inline-block;
     width: 2em;
     height: 2rem;
   }
