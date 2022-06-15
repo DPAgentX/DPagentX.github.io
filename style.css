@@ -36,6 +36,7 @@ body {
   font-family: var(--font-mono);
   background-color: var(--bgcolor);
   margin: 0;
+  overflow: hidden;
 }
 #header {
   display: flex;
@@ -684,18 +685,22 @@ main{
 
 body::-webkit-scrollbar {
   width: 11px;
+
 }
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--green) var(--bgcolor);
+  
 }
 body::-webkit-scrollbar-track {
   background: var(--bgcolor);
+  
 }
 body::-webkit-scrollbar-thumb {
   background-color: var(--green);
   border-radius: 6px;
   border: 3px solid var(--bgcolor);
+  
 }
 .numberedHeading,.numberedHeading span{
   color: var(--aqua);
@@ -744,8 +749,10 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 100%;
-  max-height: 100%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   z-index: -10;
   opacity: 0.3;
 }
@@ -753,11 +760,10 @@ body::-webkit-scrollbar-thumb {
   width: 49vw;
   position: absolute;
   overflow: hidden;
-  height: 49vh;
+  height: 50vh;
   z-index: -10;
   opacity: 0;
   animation: animate-parallax 10s linear forwards;
-
 }
 #logo{
   animation: animate-parallax 5s linear forwards;
@@ -845,7 +851,6 @@ body::-webkit-scrollbar-thumb {
     display: none; 
   }
 }
-
 #introHexagone{
   stroke-dasharray: 1500;
   animation: animate-logo 2s linear forwards;
@@ -1107,5 +1112,6 @@ body::-webkit-scrollbar-thumb {
   }
   .parallaxContainer{
     display: none;
+
   }
 }

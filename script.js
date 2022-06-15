@@ -122,3 +122,11 @@ document.addEventListener('mousemove', (e) => {
         temp.style.transform = `translateX(${x}px) translateY(${y}px)`;
     })
 })
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('document is loaded');
+    const body = document.querySelector("body");
+
+    setTimeout(() => {
+        body.style.overflow = 'visible';
+    }, 6000)
+})
