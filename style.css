@@ -752,6 +752,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   height: 49vh;
   z-index: -10;
+  overflow: hidden;
 }
 #othSection{
   background-color: var(--bgcolor);
@@ -767,6 +768,12 @@ body::-webkit-scrollbar-thumb {
   -o-user-select: none;
   user-select: none;
 }
+#logo{
+  width: 3rem;
+  height: 3rem;
+}
+
+
 
 
 
@@ -813,7 +820,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem;
     font-size:14px;
     margin-bottom: 2rem;
-    }
+  }
   .mainSection p{
     margin-bottom: 1rem;
   }
@@ -880,6 +887,11 @@ body::-webkit-scrollbar-thumb {
   #skillSectionNavBar{
     flex-direction: column;
   }
+  #logo{
+    width: 2em;
+    height: 2rem;
+  }
+  
 }
 @media screen and (max-width: 600px){
   body{
