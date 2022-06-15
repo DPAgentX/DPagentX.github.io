@@ -192,6 +192,9 @@ span {
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
+  justify-content: center;
+  border-radius: 1rem;
+  color: var(--aqua);
 }
 
 #skillSectionNavBar {
@@ -618,6 +621,7 @@ h3>i{
 }
 .contentOfFixedPosition i:hover{
   color: var(--green);
+  cursor: pointer;
 }
 
 .contentOfFixedPosition i{
@@ -751,6 +755,32 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   height: 49vh;
   z-index: -10;
+  opacity: 0;
+  animation: animate-parallax 10s linear forwards;
+
+}
+#logo{
+  animation: animate-parallax 5s linear forwards;
+
+}
+@keyframes animate-parallax {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 0.0;
+  }
+  
+  75%{
+    opacity: 0.5;  
+  }
+  100%{
+    opacity: 1.0;  
+  }
 }
 #othSection{
   background-color: var(--bgcolor);
@@ -770,6 +800,122 @@ body::-webkit-scrollbar-thumb {
   width: 3rem;
   height: 3rem;
 }
+
+
+#introLogoDiv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 8rem;
+  width: 8rem;
+  animation: remove-introLogo 3s linear forwards;
+
+}
+
+@keyframes remove-introLogo {
+  0%{
+    opacity: 1;
+    height: 8rem;
+    width: 8rem;
+  }
+  25%{
+    opacity: 1; 
+    height: 8rem;
+    width: 8rem; 
+  }
+  
+  50%{
+    opacity: 1; 
+    height: 4rem;
+    width: 4rem;
+
+  }
+  
+  75%{
+    opacity: 0.5; 
+    height: 0rem;
+    width: 0rem;
+  }
+  100%{
+    opacity: 0;
+    height: 0rem;
+    width: 0rem;
+
+    display: none; 
+  }
+}
+
+#introHexagone{
+  stroke-dasharray: 1500;
+  animation: animate-logo 2s linear forwards;
+}
+@keyframes animate-logo {
+  0%{
+    stroke-dashoffset: 1500;
+  }
+  25%{
+    stroke-dashoffset: 1125;
+  }
+  
+  50%{
+    stroke-dashoffset: 750;
+  }
+  
+  75%{
+    stroke-dashoffset: 375;
+  }
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+#introD{
+  opacity: 0;
+  animation: animate-D 2s linear forwards;
+}
+@keyframes animate-D {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  
+  50%{
+    opacity: 0.4;
+  }
+  
+  75%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1.0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
