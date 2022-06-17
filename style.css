@@ -511,48 +511,7 @@ h3>i{
 .mainContainerSkills{
     width: 70%;
 }
-
-.containerAboutus{
-  display: flex;
-  flex-direction: column;
-  gap: 3%;
-  width: 70%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  color: var(--lightest-slate);
-  
-}
-.backgroundForAddressAndContact{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-  background-image: url('images/bgImageAboutUs.jpg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: fit-content;
-  height: 80%;
-}
-.addressAndContactUs{
-  width: 70%;
-  display: flex;
-  padding: 4rem;
-  flex-direction: row;
-  justify-content: space-between;
-  height: max-content;
-}
-.contactUs{
-  display: flex;
-  flex-direction: column;
-  gap:20px;
-  flex: 1;
-}
-.address{
-  flex: 1;
-}
+/* 
 .contactUs input, textarea{
   -webkit-appearance: none;
   appearance: none;
@@ -576,7 +535,7 @@ h3>i{
 }
 .nameAndEmailInput input{
   width: 50%;
-}
+} */
 
 
 
@@ -947,13 +906,29 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.contactContainer{
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 4px 4px 14px 1px #000000a3;
+  padding: 5rem;
+  border-radius: 1rem;
+}
 
 
+.contactContainer>h1{
+  font-size: clamp(40px, 5vw, 60px);
+}
+.contactContainer div>p{
+  color: var(--green);
+}
 
-
-
-
-
+.contactContainer p {
+  color: var(--light-slate);
+}
 
 
 
@@ -1114,6 +1089,9 @@ body::-webkit-scrollbar-thumb {
     margin: 0px;
     width: 200px;
     margin-top: 30px;
+  }
+  .contactContainer{
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 830px) and (min-width: 600px){
