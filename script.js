@@ -2,20 +2,16 @@ let scrollProcess;
 let containers = document.querySelectorAll('.skillSectionNavBarElement');;
 let finalConrainers = Array.prototype.slice.call(containers);
 let changeOpacityContainers = Array.prototype.slice.call(document.querySelectorAll('.skillContainerDiv'))
-
+history.scrollRestoration = 'manual';
 document.addEventListener('scroll', () => {
     scrollProcess = document.querySelector("#scrollProgress");
     let totalHeightOfThePage = document.documentElement.scrollHeight;
     let scrollHeightFromTheTop = document.documentElement.scrollTop;
     let windowHeight = document.documentElement.clientHeight;
-
     let scrolledPercentage = (scrollHeightFromTheTop / (totalHeightOfThePage - windowHeight)) * 100;
-
     scrollProcess.style.width = Math.round(scrolledPercentage) + "%";
 
 });
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
 
