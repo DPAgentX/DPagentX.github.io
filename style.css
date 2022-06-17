@@ -505,6 +505,7 @@ h3>i{
   align-items: center;
   color: var(--lightest-slate);
   margin-bottom: 1rem;
+  overflow: hidden;
   box-sizing: border-box;
 }
 .mainContainerSkills{
